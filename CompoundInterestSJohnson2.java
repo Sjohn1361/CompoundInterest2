@@ -44,25 +44,11 @@ public class CompoundInterestSJohnson2 {
 			sc.close();
 		}
 
-		/**
-		 * @param principal
-		 * @param rate
-		 * @param time
-		 * @param compoundedyearly
-		 * @return
-		 */
-		private static double getCompoundedInterest(float principal, float rate, float time, float compoundedYearly) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-
 		public static double getCompoundInterest(float principal,float rate,float time,float compoundedYearly) {	
-			//calculator
-			return CompoundInterestSJohnson.getCompoundedInterest(principal,rate,time,compoundedYearly); 	
 			// Calculate the compound interest
 			double amount = principal * Math.pow(1 + (rate / compoundedYearly),compoundedYearly * time);
-			double Compoundinterest = amount - principal;
-			
+			double compoundInterest = amount - principal;
+			return compoundInterest;
 		}
 	}
 			
